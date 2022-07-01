@@ -3,9 +3,9 @@ import telegram
 
 
 async def main():
-    bot = telegram.Bot("5517966699:AAHgqcf3-oxrnYCEBYRsR6wl9SDUehjCFsU")
+    bot = telegram.Bot("TOKEN")
     async with bot:
-        print(await bot.get_me())
+        print((await bot.get_updates())[0])
 
 
 if __name__ == '__main__':
